@@ -1,0 +1,41 @@
+.request-form {
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--primary-color);
+
+  border: 2px solid var(--secondary-color);
+
+  max-width: 480px;
+
+  padding: 60px;
+  /* margin: 40px; */
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.request-form__header {
+  font-size: 24px;
+  font-weight: 700;
+
+  text-align: center;
+
+  margin: 12px 0;
+}
+
+.request-form__input {
+  margin: 16px 0;
+}
+
+.request-form__button {}
+
+.request-form__note {
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .request-form {
+    padding: 12px;
+  }
+}

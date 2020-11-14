@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./styles/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+  <title>Lorem ipsum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header-container">
+      <div class="header__logo">Lorem ipsum</div>
+      <div class="header-info">
+        <div class="header-info">
+          <a class="header-list__item" href="#about-us">О нас</a>
+          <a class="header-list__item" href="#services-block">Услуги</a>
+          <a class="header-list__item" href="#contacts-block">Контакты</a>
+        </div>
+        <img
+          class="phone-icon"
+          src="./assets/phone.svg"
+          alt="Заказать звонок"
+        />
+      </div>
+
+      <!-- <div class="menu"> -->
+      <input
+        id="nav-bar-toggler"
+        class="nav-bar-toggler"
+        type="checkbox"
+      />
+      <label
+        class="toggler"
+        for="nav-bar-toggler"
+      >
+        <img src="./assets/header-bar.svg" alt="Открыть" />
+      </label>
+      <!-- </div> -->
+      <nav class="navbar">
+        <div class="navbar-list">
+          <a class="navbar-item" href="#about-us">О нас</a>
+          <a class="navbar-item" href="#services-block">Услуги</a>
+          <a class="navbar-item" href="#contacts-block">Контакты</a>
+          <a class="navbar-item" href="#">Заказать бесплатный звонок</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div class="header-substrate"></div>
+
+  <main class="container">
+    <div class="introducing-block">
+      <h2 class="introducing-block__header h-lvl2">Создаём уют для вас и вашего дома.</h2>
+      <!-- <section class="introducing-block__info img">
+      </section> -->
+      <button class="introducing-block__button btn-primary">Узнать больше</button>
+      <img
+        class="introducing-block__img img"
+        src="./assets/image23.jpg"
+        alt="introducing image"
+      />
+      <!-- introducing-block__img -->
+    </div>
+    <div
+      class="about-block"
+    >
+      <img
+        class="about-block__img img"
+        src="./assets/image25.jpg"
+        alt="about image"
+      />
+      <!-- about-block__img -->
+      <section class="about-block__info">
+        <h3
+          id="about-us"
+          class="h-lvl3"
+        >
+          О нас
+        </h3>
+        <p class="paragraph">
+          Новосибирская дизайн-студия “Lorem ipsume”
+          занимается дизайном, как частных, так и
+          общественных интерьеров,
+          а также архитектурным
+          проектированием коттеджей.
+          За 14 лет студией было
+          спроектировано
+          и реализовано более 550
+          самых различных объектов.
+        </p>
+      </section>
+    </div>
+    <div
+      id="services-block"
+      class="services-block"
+    >
+      <h3
+        id="about-us"
+        class="services-block__header h-lvl3"
+      >
+        Услуги
+      </h3>
+      <section class="card-list">
+        <article class="card">
+          <img
+            class="img card__img"
+            src="./assets/design-project.jpg"
+            alt="test card img"
+          />
+          <h4 class="card__header">Дизайн-проект</h4>
+          <p class="card__discription">1800₽ — 2000₽</p>
+          <button class="btn-primary">Заказать</button>
+        </article>
+
+        <article class="card">
+          <img
+            class="img card__img"
+            src="./assets/preliminary-design.jpg"
+            alt="test card img"
+          />
+          <h4 class="card__header">Эскизный проект</h4>
+          <p class="card__discription">1600₽ — 1300₽ </p>
+          <button class="btn-primary">Заказать</button>
+        </article>
+
+        <article class="card">
+          <img
+            class="img card__img"
+            src="./assets/deal.jpg"
+            alt="test card img"
+          />
+          <h4 class="card__header">По договору</h4>
+          <p class="card__discription">Цена обсуждается индивидуально</p>
+          <button class="btn-primary">Заказать</button>
+        </article>
+      </section>
+    </div>
+    <div
+      id="contacts-block"
+      class="contacts-block"
+    >
+      <h3
+        id="about-us"
+        class="contacts-block__header h-lvl3"
+      >
+        Основыне контакты
+      </h3>
+      <!-- <header class="contacts-block__header">Основыне контакты</header> -->
+      <div class="contacts-container">
+        <img
+          class="location-img img"
+          src="./assets/map.jpg"
+          alt="карта"
+        />
+        <section class="contacts">
+          <article class="contacts__block">
+            <header class="contact-header">Телефон:</header>
+            <p class="contact-info">8 383 334-72-71</p>
+          </article>
+          <article class="contacts__block">
+            <header class="contact-header">Адрес:</header>
+            <p class="contact-info">Рочдельская, 22</p>
+          </article>
+          <article class="contacts__block">
+            <header class="contact-header">Email:</header>
+            <p class="contact-info">loremipsime@gmail.com</p>
+          </article>
+          <article class="contacts__block">
+            <header class="contact-header">Соц. сети:</header>
+            <div class="contact-info">
+              <a href="https://www.instagram.com/">
+                <img
+                  src="./assets/inst.jpg"
+                  alt="instagram"
+                />
+              </a>
+              <a href="https://vk.com/">
+                <img
+                  src="./assets/vk.jpg"
+                  alt="vk"
+                />
+              </a>
+            </div>
+          </article>
+        </section>
+      </div>
+    </div>
+    <div class="request-block">
+      <form
+        class="request-form"
+        action="#"
+      >
+        <header class="request-form__header">
+          Заполните форму и
+          наш менеджер свяжется с вами
+        </header>
+        <input
+          class="request-form__input inp-primary"
+          type="text"
+          placeholder="Ваше имя"
+        />
+        <input
+          class="request-form__input inp-primary"
+          type="text"
+          placeholder="+7 (___) ___-__-__"
+        />
+        <button
+          class="request-form__button btn-primary"
+          type="submit"
+        >
+          Заказать звонок
+        </button>
+        <p class="request-form__note">*Заказа звонка осуществляется бесплатно</p>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">Created with HTML, CSS, JS, knowledges and nothing more!</footer>
+</body>
+</html>

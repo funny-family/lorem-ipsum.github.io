@@ -1,0 +1,154 @@
+@import url('./normalize.css');
+@import url('./components/components.css');
+
+:root {
+  --primary-color: white;
+  --secondary-color: black;
+
+  --container-size: 100rem;
+
+  --header-height: 60px;
+
+  --footer-height: 60px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.img {
+  /* width: 100%; */
+
+  /* max-width: 100%;
+  height: auto; */
+
+  width: 100%;
+  height: auto;
+}
+
+.h-lvl2 {
+  display: block;
+
+  width: 100%;
+
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.h-lvl3 {
+  display: block;
+
+  text-align: center;
+
+  width: 100%;
+
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.paragraph {
+  font-size: 20px;
+
+  line-height: 28px;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+.container {
+  width: 90%;
+  height: 100%;
+
+  margin: 0 auto;
+
+  max-width: var(--container-size);
+}
+
+/* -------------------------------------------------------------------------------- */
+
+
+
+/* -------------------------------------------------------------------------------- */
+
+.services-block {}
+
+.services-block__header {}
+
+.card-list {}
+
+.card {}
+
+.card__img {}
+
+.card__header {}
+
+.card__discription {}
+
+/* -------------------------------------------------------------------------------- */
+
+.contacts-container {
+  display: block;
+}
+
+.location-img {
+  max-width: 100%;
+  height: auto;
+
+  object-fit: cover;
+  /* overflow: hidden; */
+}
+
+@media (min-width: 1120px) {
+  .contacts-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contacts__block {
+    text-align: left;
+  }
+
+  /* align all blocks in contacts to left side! */
+}
+
+.contacts {}
+
+.contacts__block {
+  margin-top: 12px;
+}
+
+.contact-header {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.contact-info {
+  font-size: 20px;
+  font-weight: 600;
+
+  margin: 0;
+  margin-top: 8px;
+}
+
+/* @media (min-width: 1200px) {
+  .contacts-container {
+    display: flex;
+  }
+} */
+
+/* -------------------------------------------------------------------------------- */
+
+.request-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -------------------------------------------------------------------------------- */
+
