@@ -1,5 +1,25 @@
-a {
+.link {
   color: var(--secondary-color);
 
   text-decoration: none;
+}
+
+.link::after {
+  content: '';
+
+  display: block;
+
+  width: 0;
+
+  height: 1px;
+
+  background-color: var(--secondary-color);
+
+  transition: width 0.3s;
+}
+
+.link:hover::after {
+  width: 100%;
+
+  transition: width 0.3s;
 }

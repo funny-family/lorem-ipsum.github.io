@@ -7,19 +7,57 @@
   <link rel="stylesheet" href="./styles/main.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
+  <script defer src="./index.js"></script>
+
   <title>Lorem ipsum</title>
 </head>
 <body>
+  <div id="modal" class="modal">
+
+    <!-- Modal content -->
+    <div id="modal-content" class="modal-content">
+      <!-- <span class="close">&times;</span> -->
+      <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal -->
+      <form
+        class="request-form"
+        action="#"
+      >
+        <header class="request-form__header">
+          Заполните форму и
+          наш менеджер свяжется с вами
+        </header>
+        <input
+          class="request-form__input inp-primary"
+          type="text"
+          placeholder="Ваше имя"
+        />
+        <input
+          class="request-form__input inp-primary"
+          type="text"
+          placeholder="+7 (___) ___-__-__"
+        />
+        <button
+          class="request-form__button btn-primary"
+          type="submit"
+        >
+          Заказать звонок
+        </button>
+        <p class="request-form__note">*Заказа звонка осуществляется бесплатно</p>
+      </form>
+    </div>
+  </div>
+
   <header class="header">
     <div class="header-container">
       <div class="header__logo">Lorem ipsum</div>
       <div class="header-info">
         <div class="header-info">
-          <a class="header-list__item" href="#about-us">О нас</a>
-          <a class="header-list__item" href="#services-block">Услуги</a>
-          <a class="header-list__item" href="#contacts-block">Контакты</a>
+          <a class="header-list__item link" href="#about-us">О нас</a>
+          <a class="header-list__item link" href="#services-block">Услуги</a>
+          <a class="header-list__item link" href="#contacts-block">Контакты</a>
         </div>
         <img
+          id="call1"
           class="phone-icon"
           src="./assets/phone.svg"
           alt="Заказать звонок"
@@ -41,10 +79,10 @@
       <!-- </div> -->
       <nav class="navbar">
         <div class="navbar-list">
-          <a class="navbar-item" href="#about-us">О нас</a>
-          <a class="navbar-item" href="#services-block">Услуги</a>
-          <a class="navbar-item" href="#contacts-block">Контакты</a>
-          <a class="navbar-item" href="#">Заказать бесплатный звонок</a>
+          <a class="navbar-item link" href="#about-us">О нас</a>
+          <a class="navbar-item link" href="#services-block">Услуги</a>
+          <a class="navbar-item link" href="#contacts-block">Контакты</a>
+          <a id="call2" class="navbar-item link" href="#">Заказать бесплатный звонок</a>
         </div>
       </nav>
     </div>
@@ -74,23 +112,25 @@
       />
       <!-- about-block__img -->
       <section class="about-block__info">
-        <h3
-          id="about-us"
-          class="h-lvl3"
-        >
-          О нас
-        </h3>
-        <p class="paragraph">
-          Новосибирская дизайн-студия “Lorem ipsume”
-          занимается дизайном, как частных, так и
-          общественных интерьеров,
-          а также архитектурным
-          проектированием коттеджей.
-          За 14 лет студией было
-          спроектировано
-          и реализовано более 550
-          самых различных объектов.
-        </p>
+        <div class="info-container">
+          <h3
+            id="about-us"
+            class="h-lvl3"
+          >
+            О нас
+          </h3>
+          <p class="paragraph">
+            Новосибирская дизайн-студия “Lorem ipsume”
+            занимается дизайном, как частных, так и
+            общественных интерьеров,
+            а также архитектурным
+            проектированием коттеджей.
+            За 14 лет студией было
+            спроектировано
+            и реализовано более 550
+            самых различных объектов.
+          </p>
+        </div>
       </section>
     </div>
     <div
@@ -155,37 +195,39 @@
           src="./assets/map.jpg"
           alt="карта"
         />
-        <section class="contacts">
-          <article class="contacts__block">
-            <header class="contact-header">Телефон:</header>
-            <p class="contact-info">8 383 334-72-71</p>
-          </article>
-          <article class="contacts__block">
-            <header class="contact-header">Адрес:</header>
-            <p class="contact-info">Рочдельская, 22</p>
-          </article>
-          <article class="contacts__block">
-            <header class="contact-header">Email:</header>
-            <p class="contact-info">loremipsime@gmail.com</p>
-          </article>
-          <article class="contacts__block">
-            <header class="contact-header">Соц. сети:</header>
-            <div class="contact-info">
-              <a href="https://www.instagram.com/">
-                <img
-                  src="./assets/inst.jpg"
-                  alt="instagram"
-                />
-              </a>
-              <a href="https://vk.com/">
-                <img
-                  src="./assets/vk.jpg"
-                  alt="vk"
-                />
-              </a>
-            </div>
-          </article>
-        </section>
+        <div class="contacts-section">
+          <section class="contacts">
+            <article class="contacts__block">
+              <header class="contact-header">Телефон:</header>
+              <p class="contact-info">8 383 334-72-71</p>
+            </article>
+            <article class="contacts__block">
+              <header class="contact-header">Адрес:</header>
+              <p class="contact-info">Рочдельская, 22</p>
+            </article>
+            <article class="contacts__block">
+              <header class="contact-header">Email:</header>
+              <p class="contact-info">loremipsime@gmail.com</p>
+            </article>
+            <article class="contacts__block">
+              <header class="contact-header">Соц. сети:</header>
+              <div class="contact-info">
+                <a href="https://www.instagram.com/">
+                  <img
+                    src="./assets/inst.jpg"
+                    alt="instagram"
+                  />
+                </a>
+                <a href="https://vk.com/">
+                  <img
+                    src="./assets/vk.jpg"
+                    alt="vk"
+                  />
+                </a>
+              </div>
+            </article>
+          </section>
+        </div>
       </div>
     </div>
     <div class="request-block">

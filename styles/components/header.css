@@ -64,6 +64,14 @@
   --indent: 32px;
 
   margin-left: var(--indent);
+
+  transition: all 0.3s;
+
+  cursor: pointer;
+}
+
+.phone-icon:hover {
+  transform: translateY(-4px);
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -71,7 +79,13 @@
 .toggler {
   display: none;
 
+  transition: all 0.1s;
+
   cursor: pointer;
+}
+
+.toggler:active {
+  transform: translateY(-4px);
 }
 
 #nav-bar-toggler {
